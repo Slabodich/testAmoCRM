@@ -1,20 +1,95 @@
-.wrapper {
-  background-color: #1e1620;
-  // height: 400px;
-  .main {
-    padding: 40px 15px;
+$primary-bg-color: #1e1620;
+$main-font-size: 36px;
+$main-line-height: 43px;
+$secondary-font-size: 18px;
+$secondary-line-height: 22px;
 
-    background-image: url('../../accets/images/bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@mixin gradient-text($start-color, $end-color) {
+  background: linear-gradient(45deg, $start-color, $end-color);
+  background-clip: text;
+  color: transparent;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  background: url('../../accets/images/bg.png') center/cover no-repeat;
+  background-color: $primary-bg-color;
+  box-sizing: border-box;
+
+  .main {
+    padding: 40px 15px 60px;
+
+    .firstPartTitle,
+    .secondPartTitle {
+      font-family: inter;
+      font-size: $main-font-size;
+      line-height: $main-line-height;
+    }
 
     .firstPartTitle {
-      font-family: inter;
+      margin-bottom: 3px;
       font-weight: 400;
-      font-size: 36px;
       color: #e4e5ea;
-      line-height: 43px;
+    }
+
+    .secondPartTitle {
+      margin-bottom: 15px;
+      font-weight: 900;
+      @include gradient-text(rgba(252, 176, 69, 1), rgba(255, 63, 120, 1));
+    }
+
+    .tagline {
+      margin-bottom: 45px;
+
+      color: #e4e5ea;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: $secondary-font-size;
+      line-height: $secondary-line-height;
+    }
+
+    .offerTitle {
+      margin-bottom: 19px;
+
+      font-family: inter;
+      color: #e4e5ea;
+      font-size: $secondary-font-size;
+      font-weight: 500;
+      line-height: $secondary-line-height;
+      span {
+        font-weight: 700;
+        @include gradient-text(rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+      }
+    }
+
+    .offerList {
+      display: grid;
+      grid-template-columns: 123px 1fr;
+      row-gap: 14px;
+      margin-left: 17px;
+
+      list-style: none;
+      text-transform: uppercase;
+
+      li {
+        position: relative;
+
+        font-family: Montserrat;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        color: #e4e5ea;
+      }
+
+      li::before {
+        content: url('../../accets/images/Line.svg');
+        position: absolute;
+        bottom: 4px;
+        left: -15px;
+      }
     }
   }
 }

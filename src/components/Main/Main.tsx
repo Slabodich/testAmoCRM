@@ -10,8 +10,10 @@ const Header: React.FC = () => {
         <p className={styles.tagline}>
           Развиваем и контролируем продажи за вас
         </p>
-        <h2>Вместе с бесплатной консультацией мы дарим:</h2>
-        <ul>
+        <h2 className={styles.offerTitle}>
+          Вместе с <span>бесплатной </span> <span>консультацией </span>мы дарим:
+        </h2>
+        <ul className={styles.offerList}>
           <li>Skype аудит</li>
           <li>30 виджетов</li>
           <li>Dashboard</li>
