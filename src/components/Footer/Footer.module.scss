@@ -51,6 +51,9 @@
         color: $light-text;
         span {
           font-size: 14px;
+          @media screen and (min-width: 1280px) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -106,14 +109,16 @@
         margin-bottom: 10px;
       }
 
-      img {
+      a {
         margin-top: 5px;
         margin-right: 10px;
 
         @media screen and (min-width: 1280px) {
           margin: 0 10px 0 0;
-          width: 20px;
-          height: 20px;
+          img {
+            width: 20px;
+            height: 20px;
+          }
 
           &:last-child {
             margin: 0;

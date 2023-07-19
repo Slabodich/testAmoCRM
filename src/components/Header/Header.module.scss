@@ -88,11 +88,12 @@
       font-size: 16px;
     }
     .socials {
-      img {
+      a {
         margin-right: 30px;
-        width: 20px;
-        height: 19px;
-
+        img {
+          width: 20px;
+          height: 19px;
+        }
         &:last-child {
           margin: 0;
         }

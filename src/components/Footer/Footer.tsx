@@ -59,9 +59,15 @@ const Footer: React.FC = () => {
           <h3 className={styles.title}>Контакты</h3>
           <span className={styles.phone}>+7 555 555-55-55</span>
           <div className={styles.socials}>
-            <img src={Telegram} alt="Telegram" />
-            <img src={Viber} alt="Viber" />
-            <img src={Whatsapp} alt="Whatsapp" />
+            <a href="#">
+              <img src={Telegram} alt="Telegram" />
+            </a>
+            <a href="#">
+              <img src={Viber} alt="Viber" />
+            </a>
+            <a href="#">
+              <img src={Whatsapp} alt="Whatsapp" />
+            </a>
           </div>
           <span className={styles.addres}>
             Москва, Путевой проезд 3с1, к 902
