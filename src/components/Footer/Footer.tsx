@@ -66,10 +66,10 @@ const Footer: React.FC = () => {
           <span className={styles.addres}>
             Москва, Путевой проезд 3с1, к 902
           </span>
-        </div>
-        <div className={styles.info}>
-          <span>©WELBEX 2022. Все права защищены.</span>
-          <a href="#">Политика конфиденциальности</a>
+          <div className={styles.info}>
+            <span>©WELBEX 2022. Все права защищены.</span>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,8 +1,4 @@
-$primary-bg-color: #1e1620;
-$main-font-size: 36px;
-$main-line-height: 43px;
-$secondary-font-size: 18px;
-$secondary-line-height: 22px;
+@import '../../styles/variables';
 
 @mixin gradient-text($start-color, $end-color) {
   background: linear-gradient(45deg, $start-color, $end-color);
@@ -17,78 +13,165 @@ $secondary-line-height: 22px;
   background: url('../../accets/images/bg.png') center/cover no-repeat;
   background-color: $primary-bg-color;
   box-sizing: border-box;
+  color: $light-text;
+  font-family: $primary-font;
+
+  @media screen and (min-width: 1280px) {
+    background: none;
+  }
 
   .main {
     padding: 40px 15px 60px;
 
-    .firstPartTitle,
-    .secondPartTitle {
-      font-family: inter;
-      font-size: $main-font-size;
-      line-height: $main-line-height;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 69px;
+      width: 100%;
+
+      padding: 0;
     }
 
-    .firstPartTitle {
-      margin-bottom: 3px;
-      font-weight: 400;
-      color: #e4e5ea;
-    }
-
-    .secondPartTitle {
-      margin-bottom: 15px;
-      font-weight: 900;
-      @include gradient-text(rgba(252, 176, 69, 1), rgba(255, 63, 120, 1));
-    }
-
-    .tagline {
-      margin-bottom: 45px;
-
-      color: #e4e5ea;
-      font-family: Montserrat;
-      font-weight: 400;
-      font-size: $secondary-font-size;
-      line-height: $secondary-line-height;
-    }
-
-    .offerTitle {
-      margin-bottom: 19px;
-
-      font-family: inter;
-      color: #e4e5ea;
-      font-size: $secondary-font-size;
-      font-weight: 500;
-      line-height: $secondary-line-height;
-      span {
-        font-weight: 700;
-        @include gradient-text(rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+    .left {
+      @media screen and (min-width: 1280px) {
+        margin-top: 95px;
+        width: 362px;
       }
-    }
 
-    .offerList {
-      display: grid;
-      grid-template-columns: 123px 1fr;
-      row-gap: 14px;
-      margin-left: 17px;
+      .firstPartTitle,
+      .secondPartTitle {
+        font-size: 36px;
+        line-height: 44px;
 
-      list-style: none;
-      text-transform: uppercase;
+        @media screen and (min-width: 1280px) {
+          font-size: 48px;
+          line-height: 58px;
+        }
+      }
 
-      li {
-        position: relative;
-
-        font-family: Montserrat;
-        font-size: 13px;
-        line-height: 16px;
-        letter-spacing: 0.5px;
+      .firstPartTitle {
+        margin-bottom: 3px;
         font-weight: 400;
-        color: #e4e5ea;
       }
 
-      li::before {
-        content: url('../../accets/images/Line.svg');
-        position: absolute;
-        bottom: 4px;
-        left: -15px;
+      .secondPartTitle {
+        margin-bottom: 15px;
+        font-weight: 900;
+        @include gradient-text(rgba(252, 176, 69, 1), rgba(255, 63, 120, 1));
+
+        @media screen and (min-width: 1280px) {
+          margin-bottom: 26px;
+        }
+      }
+
+      .tagline {
+        margin-bottom: 45px;
+
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: $secondary-font-size;
+        line-height: $secondary-line-height;
+
+        @media screen and (min-width: 1280px) {
+          width: 275px;
+        }
+      }
+    }
+
+    .rigth {
+      @media screen and (min-width: 1280px) {
+        margin-top: 105px;
+      }
+      .offerTitle {
+        @media screen and (min-width: 1280px) {
+          margin: 3px 0px 38px 7px;
+
+          width: 291px;
+          text-align: right;
+        }
+        margin-bottom: 19px;
+
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $primary-font;
+        font-size: $secondary-font-size;
+        font-weight: 500;
+        line-height: $secondary-line-height;
+        span {
+          font-weight: 700;
+          @include gradient-text(rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+
+          @media screen and (min-width: 1280px) {
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+
+      .offerList {
+        @media screen and (min-width: 1280px) {
+          display: none;
+        }
+        display: grid;
+        grid-template-columns: 123px 1fr;
+        row-gap: 14px;
+        margin-left: 17px;
+
+        list-style: none;
+        text-transform: uppercase;
+
+        li {
+          position: relative;
+
+          font-family: $secondary-font;
+          font-size: 13px;
+          line-height: 16px;
+          letter-spacing: 0.5px;
+          font-weight: 400;
+        }
+
+        li::before {
+          content: url('../../accets/images/Line.svg');
+          position: absolute;
+          bottom: 4px;
+          left: -15px;
+        }
+      }
+
+      .deskOfferList {
+        display: none;
+        grid-template-columns: 135px 135px;
+        column-gap: 31px;
+        row-gap: 26px;
+        margin-bottom: 61px;
+        h4 {
+          margin-bottom: 5px;
+
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: uppercase;
+          text-align: right;
+          letter-spacing: 0.5px;
+        }
+        span {
+          display: block;
+          font-family: $secondary-font;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: right;
+        }
+        @media screen and (min-width: 1280px) {
+          display: grid;
+        }
+      }
+      .button {
+        display: none;
+        justify-content: flex-end;
+
+        @media screen and (min-width: 1280px) {
+          display: flex;
+        }
       }
     }
   }
