@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testAmoCRM2/static/css/main.93fff336.css",
+    "main.css": "/testAmoCRM2/static/css/main.90333e52.css",
     "main.js": "/testAmoCRM2/static/js/main.154275cd.js",
     "static/media/bgDesktop.png": "/testAmoCRM2/static/media/bgDesktop.87e2bde65fdf915c9610.png",
     "static/media/bg.png": "/testAmoCRM2/static/media/bg.476501a6a691d7600600.png",
@@ -10,11 +10,11 @@
     "index.html": "/testAmoCRM2/index.html",
     "static/media/telegram.svg": "/testAmoCRM2/static/media/telegram.7c6cd846841cd7aac17701958e2b4545.svg",
     "static/media/Line.svg": "/testAmoCRM2/static/media/Line.e54c78534812ceaf5439.svg",
-    "main.93fff336.css.map": "/testAmoCRM2/static/css/main.93fff336.css.map",
+    "main.90333e52.css.map": "/testAmoCRM2/static/css/main.90333e52.css.map",
     "main.154275cd.js.map": "/testAmoCRM2/static/js/main.154275cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.93fff336.css",
+    "static/css/main.90333e52.css",
     "static/js/main.154275cd.js"
   ]
 }
