@@ -132,8 +132,11 @@
 
         li::before {
           content: url('../../accets/images/Line.svg');
+          display: block;
+          height: 1px;
+          width: 10px;
           position: absolute;
-          bottom: 4px;
+          bottom: 18px;
           left: -15px;
         }
       }
