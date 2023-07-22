@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testAmoCRM2/static/css/main.1b948c0f.css",
+    "main.css": "/testAmoCRM2/static/css/main.b62b561c.css",
     "main.js": "/testAmoCRM2/static/js/main.154275cd.js",
     "static/media/bgDesktop.png": "/testAmoCRM2/static/media/bgDesktop.87e2bde65fdf915c9610.png",
     "static/media/bg.png": "/testAmoCRM2/static/media/bg.476501a6a691d7600600.png",
@@ -8,13 +8,13 @@
     "static/media/whatsapp.svg": "/testAmoCRM2/static/media/whatsapp.5f4e1186210287546a95fab6d3374a71.svg",
     "static/media/viber.svg": "/testAmoCRM2/static/media/viber.8f378f6ea73fcdff47b7f10fb9a8057a.svg",
     "index.html": "/testAmoCRM2/index.html",
+    "static/media/Line.svg": "/testAmoCRM2/static/media/Line.6314d4d1094ffb616b1a.svg",
     "static/media/telegram.svg": "/testAmoCRM2/static/media/telegram.7c6cd846841cd7aac17701958e2b4545.svg",
-    "static/media/Line.svg": "/testAmoCRM2/static/media/Line.e54c78534812ceaf5439.svg",
-    "main.1b948c0f.css.map": "/testAmoCRM2/static/css/main.1b948c0f.css.map",
+    "main.b62b561c.css.map": "/testAmoCRM2/static/css/main.b62b561c.css.map",
     "main.154275cd.js.map": "/testAmoCRM2/static/js/main.154275cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b948c0f.css",
+    "static/css/main.b62b561c.css",
     "static/js/main.154275cd.js"
   ]
 }
